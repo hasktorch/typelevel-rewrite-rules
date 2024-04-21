@@ -5,7 +5,7 @@ import Data.Function
 #if MIN_VERSION_ghc(9,6,0)
 import GHC.Plugins (Type)
 import GHC.Tc.Utils.TcType (eqType)
-#if MIN_VERSION_ghc(9,0,0)
+#elif MIN_VERSION_ghc(9,0,0)
 import GHC.Plugins (Type, eqType)
 #else
 import GhcPlugins (Type, eqType)
